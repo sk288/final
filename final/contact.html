@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Mil Photography</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="form.js"></script>
+
+
+  </head>
+  <body>
+    <div class="header">
+      <img src="img/smp-logo.svg" alt="Simple Mil Photography Logo" width="300">
+
+    </div>
+<!-- Top nav-->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" style="font-size:48px;color:red"></i>
+      </a>
+    </div>
+<!-- Top nav script-->
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+<!--contact section-->
+<div class="email">
+  <img src="img/email.png" alt="Email" width="100px">
+  <h1>Contact</h1>
+  <br>
+  <p>To contact the photographer you can send a email by <a href="mailto:kiwistarspro@gmail.com" target="_top">clicking here</a> or by using the form below.</p>
+  <br>
+</div>
+<div class="container">
+    <!-- Form Started -->
+    <div class="container form-top">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                <div class="panel panel-danger">
+                    <div class="panel-body">
+                        <form id="reused_form">
+                            <div class="form-group">
+                                <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+                                <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-raised btn-block btn-danger">SEND &rarr;</button>
+                            </div>
+                        </form>
+                        <div id="error_message" style="width:100%; height:100%; display:none; ">
+                            <h4>
+                                Error
+                            </h4>
+                            Sorry there was an error sending your form.
+                        </div>
+                        <div id="success_message" style="width:100%; height:100%; display:none; ">
+<h2>Success! Your Message was Sent Successfully.</h2>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--contact section end-->
+
+<div class="footer">
+  <span>&copy;2018 Simple Mil Photography</span>
+
+</div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Mil Photography</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="header">
+      <img src="img/smp-logo.svg" alt="Simple Mil Photography Logo" width="300">
+
+    </div>
+<!-- Top nav-->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html"class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" style="font-size:48px;color:red"></i>
+      </a>
+    </div>
+<!-- Top nav script-->
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+<!--About section-->
+<div class="left">
+  <div id="left-txt">
+<img class="icon" src="img/about.jpg" alt="Photographer">
+</div>
+</div>
+<div class="right">
+  <div id="right-txt">
+    <div id="tagline">About</div>
+    <div id="title">Melissa Rodriguez</div>
+    <div id="about">Currently a college student interested in photography. Melissa’s main inspiration of photography comes from nature, however she also loves the the artistic style of buildings. It is often said you can find her wandering the city looking for new things to photograph.</div>
+    <div class="social">
+      <a href="https://www.instagram.com/water.drop.lets/" target="_blank"><img class="social-icon" src="img/inst.svg" alt="Instagram"></a>
+      <a href="https://kiwistarspro.tumblr.com/" target="_blank"><img class="social-icon" src="img/tmblr.svg" alt="Tumblr"></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <span>&copy;2018 Simple Mil Photography</span>
+
+</div>
+  </body>
+</html>

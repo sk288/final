@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Mil Photography</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  </head>
+  <body>
+    <div class="header">
+      <img src="img/smp-logo.svg" alt="Simple Mil Photography Logo" width="300">
+
+    </div>
+<!-- Top nav-->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" style="font-size:48px;color:red"></i>
+      </a>
+    </div>
+<!-- Top nav script-->
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+<!-- Gallery -->
+<div class="gallery-section">
+  <br>
+  <br>
+  <h1>Gallery</h1>
+
+    <p class="page-description text-center"></p>
+
+    <div class="tz-gallery">
+
+      <div class="row">
+
+          <div class="col-sm-12 col-md-4">
+              <a class="lightbox" href="img/photos/01-full.jpg">
+                  <img src="img/photos/01.png" alt="Building">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="img/photos/02-full.jpg">
+                  <img src="img/photos/02.png" alt="Trees">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="img/photos/03-full.jpg">
+                  <img src="img/photos/03.png" alt="Globe">
+              </a>
+          </div>
+          <div class="col-sm-12 col-md-8">
+              <a class="lightbox" href="img/photos/04-full.jpg">
+                  <img src="img/photos/04.png" alt="Sun-setting Sky">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="img/photos/05-full.jpg">
+                  <img src="img/photos/05.png" alt="Pink Flowers">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="img/photos/06-full.jpg">
+                  <img src="img/photos/06.png" alt="Red Flowers">
+              </a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+              <a class="lightbox" href="img/photos/07-full.jpg">
+                  <img src="img/photos/07.png" alt="Japanese Garden">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a class="lightbox" href="img/photos/10-full.jpg">
+                  <img src="img/photos/10.png" alt="Black & White Building">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a class="lightbox" href="img/photos/08-full.jpg">
+                  <img src="img/photos/08.png" alt="Ocean Side">
+              </a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+              <a class="lightbox" href="img/photos/09-full.jpg">
+                  <img src="img/photos/09.png" alt="Forest Trail">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-8">
+              <a class="lightbox" href="img/photos/13-full.jpg">
+                  <img src="img/photos/13.png" alt="Hotel in the Dark">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="img/photos/11-full.jpg">
+                  <img src="img/photos/11.png" alt="Yellow Building">
+              </a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+              <a class="lightbox" href="img/photos/12-full.jpg">
+                  <img src="img/photos/12.png" alt="Chinatown street">
+              </a>
+          </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+
+<div class="footer">
+  <span>&copy;2018 Simple Mil Photography</span>
+
+</div>
+  </body>
+</html>
